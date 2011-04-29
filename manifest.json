@@ -1,7 +1,7 @@
 {
 	"name": "Chrome Scrobbler",
 	"version": "0.2",  
-	"description": "A last.fm scrobbler for popular websites, such as YouTube, MySpace, and Lala.",
+	"description": "A last.fm scrobbler for popular websites, such as YouTube, Pandora, and Amazon Cloud Player",
 	"icons": { "128": "lf-icon.png" },
 	"background_page": "background.html",
 	"options_page": "options.html",
@@ -22,6 +22,12 @@
 			"matches": ["http://www.pandora.com/*"],
 			"js": ["pandora.js"],
 			"run_at": "document_end"
+		},
+		{
+			"matches": ["https:www.amazon.com/gp/dmusic/mp3/player*"],
+			"js": ["azcloud.js"],
+			"run_at": "document_end"
 		}
+		
   ]
 }
